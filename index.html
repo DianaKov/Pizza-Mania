@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mania</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
+    <link rel="shortcut icon" href="./img/pizza.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <script src="./jquery.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-wrapper">
+                <h4 class="nav-logo">
+                    <a href="#home">
+                        <img src="./img/icon _Pizza Slice_.png" alt="">
+                    </a>
+                </h4>
+                <button class="burger-menu">
+                    <span class="burger-menu__line"></span>
+                    <span class="burger-menu__line"></span>
+                    <span class="burger-menu__line"></span>
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#menu">Pizza menu</a></li>
+                <li class="nav-link"><a href="#reservation">Reservation</a></li>
+                <li class="nav-link"><a href="#constructor">Constructor</a></li>
+                <li class="nav-link"><a href="#coupons">Specials & Coupons</a></li>
+                <li class="nav-link"><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="container__item--left">
+                <h2>Pizza family</h2>
+                <p class="container-content">people disappoint, <br>but pizza never does.</p>
+                    <form action="/index.php">
+                        <input type="search" name="search">
+                        <button type="submit">Search Location</button>
+                    </form>
+                <button>Try now</button>
+            </div>
+            <div class="container__item--right">
+                <img class="container__item__image--menu" src="./img/burger-menu.png" alt="menu">
+                <img class="container__item__image--moon" src="./img/Moon_.png" alt="sun">
+                <img class="container__item__image--sun" src="./img/Sun_.png" alt="moon">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h1>Menu</h1>
+        <div class="pizza-menu">
+
+            <div class="pizza-menu__left">
+                <img src="./img/pizza.png" alt="">
+            </div>
+
+            <div class="pizza-menu__center">
+                <h3 class="pizza-menu__title">Pizza by the slice</h3>
+                <ul class="pizza-menu__list">
+                  <li class="menu-item">
+                    <span class="menu-item__name">Pizza Margherita</span>
+                    <span class="menu-item__price">$4.2</span>
+                  </li>
+                  <li class="menu-item">
+                    <span class="menu-item__name">Pizza Pepperoni</span>
+                    <span class="menu-item__price">$3.8</span>
+                  </li>
+                  <li class="menu-item">
+                    <span class="menu-item__name">Pizza Hawaiian</span>
+                    <span class="menu-item__price">$5.2</span>
+                  </li>
+                  <li class="menu-item">
+                    <span class="menu-item__name">Pizza Vegetarian</span>
+                    <span class="menu-item__price">$3.6</span>
+                  </li>
+                  <li class="menu-item">
+                    <span class="menu-item__name">Pizza Pesto</span>
+                    <span class="menu-item__price">$4.4</span>
+                  </li>
+                  <li class="menu-item">
+                    <span class="menu-item__name">Pizza Greek</span>
+                    <span class="menu-item__price">$3.8</span>
+                  </li>
+                  <li class="menu-item">
+                    <span class="menu-item__name">Pizza Four cheese</span>
+                    <span class="menu-item__price">$4.2</span>
+                  </li>
+                  <li class="menu-item">
+                    <span class="menu-item__name">Pizza Meat lover's</span>
+                    <span class="menu-item__price">$5.2</span>
+                  </li>
+                  <li class="menu-item">
+                    <span class="menu-item__name">Pizza Supreme</span>
+                    <span class="menu-item__price">$4.2</span>
+                  </li>
+                </ul>
+              </div>
+          
+            <div class="pizza-menu__right">
+                <h3 class="pizza-menu__title">Gourmet Pizza</h3>
+                  
+                <ul class="pizza-menu__list">
+                    <li class="pizza-menu__item">
+                      <div class="pizza-menu__name-price">
+                        <span class="pizza-menu__name">Pizza Margherita</span>
+                        <span class="pizza-menu__price">$21</span>
+                      </div>
+                      <div class="pizza-menu__description">
+                        <p>Pizza comes with San Marzano tomatoes, mozzarella cheese, fresh basil, salt, and extra-virgin olive oil.</p>
+                      </div>
+                    </li>
+                    <li class="pizza-menu__item">
+                      <div class="pizza-menu__name-price">
+                        <span class="pizza-menu__name">Pizza Four cheese</span>
+                        <span class="pizza-menu__price">$20.5</span>
+                      </div>
+                      <div class="pizza-menu__description">
+                        <p>Pizza comes with tomato sauce, mozzarella, gorgonzola, Parmigiano Reggiano, and goat cheese</p>
+                      </div>
+                    </li>
+                    <li class="pizza-menu__item">
+                      <div class="pizza-menu__name-price">
+                        <span class="pizza-menu__name">Pizza Meat lover's</span>
+                        <span class="pizza-menu__price">$24</span>
+                      </div>
+                      <div class="pizza-menu__description">
+                        <p>Pizza with two types of cheese, bacon, ham, pepperoni and hot sausage!</p>
+                      </div>
+                    </li>
+                </ul>
+                <button class="btn-more">Explore more</button>
+            </div>
+        </div>
+    </section>
+
+  <section class="coupons" id="reservation">
+        <div class="coupons__content">
+            <p class="coupons__terms">*terms & conditions applied.</p>
+            <div class="coupons__reservation">
+                <p class="coupons__reservation-title">Reservation</p>
+                <p class="coupons__reservation-time">Book online or give us a call on +91 1111 222 333s</p>
+                <p class="coupons__reservation-time">Between 9:30 am - 10:00 pm</p>
+                <form id="contact"  class="coupons__reservation-form" method="POST" action="./php/mail.php">
+                    <div class="coupons__reservation-container">
+                        <label class="coupons__reservation-label">name</label>
+                    <input type="text" placeholder="" name="name" class="coupons__reservation-input" required>
+                    </div>
+                    <div class="coupons__reservation-container">
+                        <label class="coupons__reservation-label">e-Mail</label>
+                    <input type="email" placeholder="" name="email" class="coupons__reservation-input" required>
+                    </div>
+                    <div class="coupons__reservation-container">
+                        <label class="coupons__reservation-label">people number</label>
+                    <input type="tel" placeholder="" name="phone"  class="coupons__reservation-input" required>
+                    </div>
+                    <div class="coupons__reservation-container">
+                        <label class="coupons__reservation-label">Date & time</label>
+                    <input type="text" placeholder="" class="coupons__reservation-input" required>
+                    </div>
+                    <div class="coupons__reservation-button-container">
+                    <button  class="coupons__reservation-button">Send Mail</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="constructor">
+        <h3>Розмiр:</h3>
+        <form id='pizza' action="">
+            <label class="radio">
+                <input type="radio" class="radioIn" id="small" name="size" value="small">
+                <span class="fakeRadio"></span><span>Small</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" class="radioIn" id="mid" name="size" value="mid">
+                <span class="fakeRadio"></span><span>Medium</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" class="radioIn" id="big" name="size" value="big" checked="true">
+                <span class="fakeRadio"></span><span>Big</span>
+            </label>
+        </form>
+        
+        <div class="table-wrapper">
+            <div class="droppable">
+                <img src="img/klassicheskij-bortik_1556622914630.png" id="cake">
+            </div>
+
+            <div class="ingridients">
+                <h3>Sauce:</h3>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="sauceClassic"
+                        src="img/sous-klassicheskij_1557758736353.png" alt="">
+                    <span>Ketchup: 5 UAH</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="sauceBBQ" src="img/sous-bbq_155679418013.png"
+                        alt="">
+                    <span>BBQ: 10 UAH</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="sauceRikotta"
+                        src="img/sous-rikotta_1556623391103.png" alt="">
+                    <span>Ricotta: 15 UAH</span>
+                </div>
+                <h3>
+                    Toppings:</h3>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="moc1" src="img/mocarela_1556623220308.png"
+                        alt="">
+                    <span>Plain cheese: UAH 20</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="moc2" src="img/mocarela_1556785182818.png"
+                        alt="">
+                    <span>Feta cheese: UAH 10</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="moc3" src="img/mocarela_1556785198489.png"
+                        alt="">
+                    <span>Mozzarella: UAH 15</span>
+                </div>
+                <br>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="telya" src="img/telyatina_1556624025747.png"
+                        alt="">
+                    <span>Veal: UAH 30</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="vetch1" src="img/vetchina.png" alt="">
+                    <span>Tomatoes: UAH 10</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="vetch2" src="img/vetchina_1556623556129.png"
+                        alt="">
+                    <span>Mushrooms: UAH 15</span>
+                </div>
+            </div>
+        </div>
+        <div class="resultBtn">
+            <button id="resultBtn">Order</button>
+        </div>
+        
+    
+    </section>
+
+    <section id="contactUs">
+        <div class="contact__content">
+            <div class="contact__content-left">
+                <div class="delivery-address">
+                    <img class="delivery-image" src="./img/Location.png" alt="">
+                    <p>Delivery address</p>  
+                </div>    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.6846961776996!2d28.830260415277053!3d47.026793779150516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c34e33dbaf3%3A0x82d8703ebfb60ce8!2sPizza%20Mania!5e0!3m2!1sru!2sua!4v1680087516606!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact__content-right">
+                <div class="contact__product">
+                    <img class="contact__product-image" src="./img/pizza2.png" alt="">
+                    <p class="contact__product-name">Wow ! Pizza<br><span>delivered to this location</span></p>
+                </div>
+                <div class="result">
+                    <div class="price">
+                        <p>Price: <span class="span_price"></span></p>
+                    </div>
+                    <div class="sauces">
+                        <p>Sauces: <span class="span_sauces"></span></p>
+                    </div>
+                    <div class="topings">
+                        <p>Тoppings: <span class="span_toppings"></span></p>
+                    </div>
+                    <div class="result-pizza"></div>
+                    <div class="discount"></div>
+                    <div id="order-price"></div>
+                    <button id="confirm">confirm the order</button>
+                </div>
+            </div>
+        </div>
+        <img class="contact-background" src="./img/Pizza-slice.png" alt="">
+    </section>
+
+
+    <div class="modal">
+        <div class="modal-content">
+            <button class="close-modal">X</button>
+          <h2>Specials & Coupons</h2>
+          <button id="discount-btn">Get 30%</button>
+        </div>
+    </div>
+
+    <div class="confirmation-modal">
+        <div class="confirmation-modal__content">
+          <h2>Thank you, your order has been received.</h2>
+          <button id="continue-shopping-btn">Continue Shopping</button>
+        </div>
+    </div>
+    <script src="./JavaScript/script.js"></script>
+    <script src="./JavaScript/constructorPizza.js"></script>
+</body> 
+</html>
