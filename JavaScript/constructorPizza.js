@@ -228,7 +228,6 @@ ingridients.forEach((el, ind) => {
         }
 
         el.style.position = 'absolute';
-        el.style.zIndex = 100;
 
         document.body.append(el);
 
