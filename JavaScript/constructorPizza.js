@@ -174,8 +174,6 @@ Pizza.prototype.addIngridients = function(ingridient) {
         }
         price = price + ingridient.price;
         spanPrice.innerHTML = price + " UAH";
-        console.log(price);
-        addDiscount();
     }
 }
 
@@ -204,6 +202,7 @@ Pizza.prototype.removeIngridients = function(ingridient) {
         }
         price -= ingridient.price;
         spanPrice.innerHTML = price + " UAH";
+        addDiscount();
     }
 }
 
